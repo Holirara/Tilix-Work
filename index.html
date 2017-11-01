@@ -1,3 +1,29 @@
-HELLO WORLD!!!
-Holly Rulez KO :-)
-Testing 1, 2
+---
+layout: default
+title: Tilix - Smart Energy Solutions
+style: index
+---
+{% capture intro-text %}{% include headline.md %}{% endcapture %}
+{% capture news-1 %}{% include news-1.md %}{% endcapture %}
+{% capture news-2 %}{% include news-2.md %}{% endcapture %}
+{% capture news-3 %}{% include news-3.md %}{% endcapture %}
+
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                {{ intro-text | markdownify }}
+            </div>
+        </div>
+    </header>
+
+    <section id="news">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">{{ news-1 | markdownify }}</div>
+                <div class="col-md-4">{{ news-2 | markdownify }}</div>
+                <div class="col-md-4">{{ news-3 | markdownify }}</div>
+            </div>
+        </div>
+    </section>
