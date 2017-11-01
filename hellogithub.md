@@ -28,3 +28,6 @@ Mister Bluebird's on my shoulder
 It's the truth, it's "actch'll"
 Everything is "satisfactch'll"
 Zip-a-dee-doo-dah,…
+
+
+![Here's a picture]({{ "/assets/icon-bg.jpg" | absolute_url }})
